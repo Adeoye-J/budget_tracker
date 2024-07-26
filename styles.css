@@ -43,7 +43,7 @@ h2 {
 }
 
 .expense-input {
-    border: 1px solid #28a745;
+    border: 2px solid #28a745;
     padding: 10px;
     border-radius: 5px;
 }
@@ -52,7 +52,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: .9rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 
@@ -75,6 +75,16 @@ button {
 button:hover {
     background-color: #218838;
 }
+
+.align-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* #setBudgetBtn, #addExpenseBtn {
+    width: 20%;
+} */
 
 .budget-summary p {
     font-size: 16px;
