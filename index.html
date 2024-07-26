@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Budget Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Personal Budget Tracker</h1>
+        
+        <div class="budget-input">
+            <label for="totalBudget">
+                Enter Total Budget: 
+                <input type="number" id="totalBudget" placeholder="Total Budget">
+            </label>
+            <button id="setBudgetBtn">Set Budget</button>
+        </div>
+        
+        <div class="expense-input">
+            <label>
+                Expense Name: 
+                <input type="text" id="expenseName" placeholder="Expense Name">
+            </label>
+            <label>
+                Expense Amount: 
+                <input type="number" id="expenseAmount" placeholder="Expense Amount">
+            </label>
+            <button id="addExpenseBtn">Add Expense</button>
+        </div>
+        
+        <div class="budget-summary">
+            <h2>Budget Summary</h2>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Total Budget</td>
+                            <td># <span id="displayBudget">0</span></td>
+                        </tr>
+                        <tr>
+                            <td>Total Spent</td>
+                            <td># <span id="totalSpent">0</span></td>
+                        </tr>
+                        <tr>
+                            <td>Remaining Amount</td>
+                            <td># <span id="remainingAmount">0</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="expense-list">
+            <h2>Expenses</h2>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Amount</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="expenseList"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
